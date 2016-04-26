@@ -10,7 +10,7 @@ Some free services do limit the number of collaborators, so by using this tool, 
 
 Let's start : 
 
--  Installing using [PyPI](https://pypi.python.org/pypi)
+- [*] Installing using [PyPI](https://pypi.python.org/pypi)
 
 ```
 	pip install git-remote-dropbox.
