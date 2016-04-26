@@ -2,7 +2,7 @@
 
 Today, I'm going to introduce [git-remote-dropbox](https://github.com/anishathalye/git-remote-dropbox) , a tool that let you turn your DropBox into a real git server.
 
-Maybe you are wondering why doing that, while there are a bunch of free services as bitbucket and others that offers unlimited private repositories ?
+Maybe you are wondering why doing that, while there are a bunch of free services as bitbucket and others that offer unlimited private repositories ?
 
 That's true, but wouldn't be good if we keep our regular files and codes together in one place :sunglasses: ? All in One backup ! 
 

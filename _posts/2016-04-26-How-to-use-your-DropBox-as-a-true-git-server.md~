@@ -1,35 +1,33 @@
-= How to use your DropBox as a true git server
-:published_at: 2016-04-25
-:hp-tags: git, DropBox, git server, git-remote-dropbox
 
 
-
-Today, I'm going to introduce https://github.com/anishathalye/git-remote-dropbox[git-remote-dropbox] , a tool that let you turn your DropBox into a real git server.
+Today, I'm going to introduce [git-remote-dropbox](https://github.com/anishathalye/git-remote-dropbox) , a tool that let you turn your DropBox into a real git server.
 
 Maybe you are wondering why doing that, while there are a bunch of free services as bitbucket and others that offers unlimited private repositories ?
 
-That's true, but wouldn't be good if we keep our regular files and codes together in one place :D ? All in One backup ! 
+That's true, but wouldn't be good if we keep our regular files and codes together in one place :sunglasses: ? All in One backup ! 
 
 Some free services do limit the number of collaborators, so by using this tool, you can add as much as you want !
 
 Let's start : 
 
-- [*] Installing using https://pypi.python.org/pypi[PyPI]
-[source] 
-	pip install git-remote-dropbox.
-    
-- [*] Go to https://www.dropbox.com/developers/apps/create[app console] in your DropBox account
-- [*] Create a Dropbox API app with full access to all files and file types
-- [*] Generate the OAuth 2 token and create a new file
+- [*] Installing using [PyPI](https://pypi.python.org/pypi)
 
-[source,json]
+```
+	pip install git-remote-dropbox.
+```  
+
+-  Go to [app console](https://www.dropbox.com/developers/apps/create) in your DropBox account
+-  Create a Dropbox API app with full access to all files and file types
+-  Generate the OAuth 2 token and create a new file
+
+```json
 {
     "token": "-----------"
 }
+```
 
 
-
-- [*] Save it to ~/.git-remote-dropbox.json 
+-  Save it to ~/.git-remote-dropbox.json 
 
 
 
@@ -38,15 +36,15 @@ Let's start :
 To clone repositories in folders mounted in your Dropbox, you can run:
 
 
-[source]
+```
 git clone "dropbox://path/to/repo"
-
+```
 
 To add a remote to an existing local repository, you can run:
 
-[source]
+```
 git remote add origin "dropbox://path/to/repo"
+```
 
 
-
-Enjoy :)
+Enjoy :thumbsup:
